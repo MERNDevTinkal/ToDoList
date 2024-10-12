@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration System</h1>
+
+        <!-- Registration Form -->
+        <div class="form-section">
+            <h2>Register a Student</h2>
+            <form id="studentForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+
+                <label for="studentID">Student ID:</label>
+                <input type="number" id="studentID" name="studentID" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="number" id="contact" name="contact" required>
+
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+
+        <!-- Display Section -->
+        <div class="display-section">
+            <h2>Registered Students</h2>
+            <p>Register student details, edit, and delete records below.</p>
+
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

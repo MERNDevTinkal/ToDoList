@@ -1,0 +1,172 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Gradient background from light blue to light cyan */
+    background: linear-gradient(to bottom right, #f0f8ff, #e0f7fa); 
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark text color */
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0056b3; /* Dark blue color for headings */
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666; /* Medium grey for paragraph text */
+}
+
+/* Form Section */
+.form-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for the form section */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Light border for inputs */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #0056b3; /* Blue border on focus */
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Display Section */
+.display-section {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* White background for table */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light grey border */
+}
+
+th {
+    background-color: #0056b3; /* Dark blue for table header */
+    color: white;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.actions button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions button {
+    background-color: #007bff; /* Blue for edit buttons */
+}
+
+.actions button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.actions button.delete {
+    background-color: #dc3545; /* Red for delete buttons */
+}
+
+.actions button.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Scrollbar styling */
+#studentList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+#studentList::-webkit-scrollbar {
+    width: 10px;
+}
+
+#studentList::-webkit-scrollbar-thumb {
+    background-color: #0056b3; /* Blue scrollbar thumb */
+    border-radius: 10px;
+}
+
+#studentList::-webkit-scrollbar-track {
+    background-color: #f4f4f4; /* Light grey scrollbar track */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    form, table {
+        width: 100%;
+    }
+}
